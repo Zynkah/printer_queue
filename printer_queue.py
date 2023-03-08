@@ -83,6 +83,6 @@ def newPrintTask():
     else:
         return False
 
-# simulation how long the pages per minute (5) would take in one hour (3600 seconds)
+# simulation how long the pages per minute (5) would take in one hour (3600 seconds) with the range of (10) students
 for i in range(10):
     simulation(3600, 5)
