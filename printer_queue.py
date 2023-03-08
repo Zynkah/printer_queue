@@ -75,8 +75,7 @@ def simulation(numSeconds, pagesPerMinute):
     print("Average Wait %6.2f seconds %3d tasks remaining." % (averageWait, printQueue.qsize()))
 
 
-def newPrintTask():
-   
+def newPrintTask():  
     num = random.randrange(1, 181)
     # return a random integer between 1 and 180, print tasks arrive once every 180 seconds.
     if num == 180:
