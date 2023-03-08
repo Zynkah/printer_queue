@@ -59,7 +59,7 @@ def simulation(numSeconds, pagesPerMinute):
     waitingtimes = []
 
     for currentSecond in range(numSeconds):
-
+         # decides whether a new printing task has been created
         if newPrintTask():
             task = Task(currentSecond)
             printQueue.put(task)
@@ -76,7 +76,7 @@ def simulation(numSeconds, pagesPerMinute):
 
 
 def newPrintTask():
-    # decides whether a new printing task has been created
+   
     num = random.randrange(1, 181)
     # return a random integer between 1 and 180, print tasks arrive once every 180 seconds.
     if num == 180:
